@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    /*background image?*/
+}
+
+header{
+    text-align: center;
+    font-size: 34px;
+padding: 30px;
+}
+
+
+#gameDisplay{
+        margin: auto;
+        background-color: cadetblue;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+        display: block;
+        height: 500px;
+        width: 500px;
+}
+
+#questions{
+margin: auto;
+font-size: 28px;
+height: 250px;
+width: 90%;
+padding: 10px;
+border: solid 3px blue;
+padding: 10px;
+}
+
+.mybuttons {
+    padding: 10px;
+}
+
+
+
+.buttons{
+    height: 40px;
+    width: 80px;
+}
+
+#scorebox{
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
