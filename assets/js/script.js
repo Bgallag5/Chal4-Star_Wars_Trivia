@@ -56,7 +56,7 @@ displayQuestion = function (){ //var startScreen hide, call timer, call getQuest
    var questionNumber = 0;
    if (questionNumber < questions.length){
        var currentQuestion = document.createElement('h3');
-       currentQuestion.classList.add('mybuttons') 
+       currentQuestion.classList.add('mybuttons');
        currentQuestion.textContent = questions[questionNumber].q;
        questionBox.appendChild(currentQuestion);
 
@@ -65,18 +65,38 @@ displayQuestion = function (){ //var startScreen hide, call timer, call getQuest
            answerChoices.classList.add('btn-success', 'btn')  //get button id's/value taskinator module edit and delete id's?
            answerChoices.setAttribute("id", i + 1);  //asigns unique ID to each button 
            answerChoices.innerHTML = ((i+1) + ". " + questions[questionNumber].a[i]);
+           answerChoices.addEventListener('click', handleAnswer);
            buttonBox.appendChild(answerChoices);
            console.log(questionNumber);
            console.log(i);
        }
+     
    }
-  
+   answerChoices.addEventListener('click', function(event) {
+    console.log(event.target.id);
+  });
 
 }
-$('.mybuttons').on("click", function(){
-    var userAnswer = $('.btn').attr("id");
-    console.log(userAnswer);
-})
+
+
+  var handleAnswer = function (event) {
+    console.log(event.target.id);
+   }
+
+
+// document.querySelectorAll('.btn').forEach(function(el){
+// el.addEventListener('click', function(){
+//     console.log(this.id);
+//     //call check answer function
+// })
+// })
+
+
+
+// $('.mybuttons').on("click", function(){
+//     var userAnswer = $('.btn').attr("id");
+//     console.log(userAnswer);
+// })
 
 // $('questions').on("click", "btn", function(){
 //     var userAnswer = $(this).attr("id");
