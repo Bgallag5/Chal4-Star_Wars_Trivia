@@ -82,7 +82,7 @@ playGame = function (){ //var startScreen hide, call timer, call getQuestion. no
    
    endGame();
 };
-
+///handleAnswer - check if corr/incorr and add score 
   var handleAnswer = function (event) {
       var chosenAnswer = event.target.getAttribute('id')
       
@@ -118,7 +118,7 @@ function countDown(){
   }
   
 }
-
+//if no more q's, hide elements and show end game screen woth play again button 
 function endGame(){
   if (questionNumber == questions.length){
     clearInterval(gameTimer);
