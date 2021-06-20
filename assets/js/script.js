@@ -89,7 +89,7 @@ playGame = function (){ //var startScreen hide, call timer, call getQuestion. no
     console.log(event.target.id);
     if (chosenAnswer === questions[questionNumber].correct){
         score++;
-
+      flash();
         soundCorrect.play();
         alert('Thats Correct!');
     } else{
@@ -118,6 +118,11 @@ function countDown(){
     displayNext();
   }
   
+}
+
+var correctFlash = setInterval(flash, 1000);
+function flash(){
+  document.getElementById("#flashcorrect").display("block");
 }
 
 function endGame(){
