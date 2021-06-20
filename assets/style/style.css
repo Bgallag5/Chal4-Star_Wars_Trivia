@@ -5,26 +5,37 @@
 }
 
 body{
-    background-color: bisque;
-    /*background image?*/
+    background-image: url(https://www.gannett-cdn.com/-mm-/ec053d705e135e22f778aeb401b098af169088ab/c=0-0-912-515/local/-/media/2015/12/11/USATODAY/USATODAY/635854422762387306-XXX-d-star-fight-01.jpg?auto=webp&format=pjpg&width=1200);
+    background-position-x: center;
 }
 
 header{
     text-align: center;
     font-size: 34px;
 padding: 30px;
+color: rgb(56, 4, 4)
+}
+
+.openScreen{
+    background-color: rgb(245, 245, 245, .90);
+    width: 50%;
+    height: 120px;
+    margin-left: 25%;
+    margin-top: 5%;
+    align-items: center;
 }
 
 
 #gameDisplay{
         margin: auto;
-        background-color: cadetblue;
+        background-color: rgb(231, 115, 37, .90);
         width: 50%;
-        border: 3px solid green;
+        border: 2px solid black;
         padding: 10px;
         display: block;
         height: 500px;
         width: 500px;
+        border-radius: 5px;
 }
 
 #questions{
@@ -33,7 +44,6 @@ font-size: 28px;
 height: 250px;
 width: 90%;
 padding: 10px;
-border: solid 3px blue;
 padding: 10px;
 }
 
@@ -41,11 +51,15 @@ padding: 10px;
     padding: 10px;
 }
 
+.buttonContainer{
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left:23px;
+}
 
-
-.buttons{
-    height: 40px;
-    width: 80px;
+.btn {
+    padding: 10px;
+    margin: 4px;
 }
 
 #scorebox{
@@ -55,4 +69,8 @@ padding: 10px;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#timer{
+    color: whitesmoke;
 }

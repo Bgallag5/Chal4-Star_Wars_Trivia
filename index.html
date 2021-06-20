@@ -11,17 +11,23 @@
 
   <body>
     <header>
-      <h2>Multiple Choice Title</h2>
+      <h2>Star Wars Trivia</h2>
     </header>
 
-    <section id = gameDisplay>
-    <div id = 'questions'>Questions Display </div>
-     <div id="mybuttons"></div> 
+    <div class="openScreen text-center" style="display: block;">
+      <h3>Welcome to the Star Wars Quiz! Press Start to Begin!</h3>
+      <button id="startButton" class="btn btn-danger btn-lg"> Start </button>
+    </div>
 
-    <div id = scorebox>
-    <h2 id = displayscore>This is my score</h2>
-  </div>
+    <section id = gameDisplay style="display: none;">
+    <div id = 'questions'> </div>
+    <div class="row buttonContainer">
+     <div id="mybuttons"></div> 
+    </div>
+    <button id="playAgain" class="btn btn-group-lg btn-danger" style="display: none; top: 30%; left:44%; position: absolute;">Play Again</button>
+    <div id = 'scorebox'></div>
   </section>
+  <div id="timer" style="display: none; top: 30px; right: 30px; position: absolute;">Timer</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
